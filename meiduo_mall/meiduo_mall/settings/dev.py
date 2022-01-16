@@ -155,9 +155,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-
+# static router prefix
 STATIC_URL = '/static/'
-
+# config static profile route
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # config logging
 LOGGING = {
     'version': 1,
