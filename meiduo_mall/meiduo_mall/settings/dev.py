@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'verifications',
     'oauth', # third party login
     'areas', # order home address
+    'goods', # goods module
 ]
 
 MIDDLEWARE = [
@@ -232,3 +233,9 @@ EMAIL_HOST_PASSWORD = 'hnhwqcevioxszrdv' # 邮箱授权时获得的密码，非�
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = '美多商城<duo.zhang13@gmail.com>' # 发件人抬头
 EMAIL_VERIFY_URL = 'http://127.0.0.1:8000/emails/verification/'
+
+# 指定自定义的Django文件存储类
+DEFAULT_FILE_STORAGE = 'meiduo_mall.utils.fastdfs.fdfs_storage.FastDFSStorage'
+
+# FastDFS相关参数
+FDFS_BASE_URL = 'http://192.168.1.138:8888/'
