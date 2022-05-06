@@ -50,6 +50,7 @@
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_content" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users_user_permissions" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.django_session" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku_image" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_brand" active-filter-id="be1bcd2b-e26a-4845-99e5-f61c30ab329f">
       <filter id="be1bcd2b-e26a-4845-99e5-f61c30ab329f" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
@@ -92,7 +93,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="b0567eb2-0d76-447a-823e-6264df8dc991" active="true">
+      <connection id="b0567eb2-0d76-447a-823e-6264df8dc991" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
