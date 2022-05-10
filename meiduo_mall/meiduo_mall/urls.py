@@ -30,4 +30,6 @@ urlpatterns = [
     url(r'^', include('areas.urls')),
     # goods
     url(r'^', include('goods.urls', namespace='goods')),
+    # elasticsearch
+    url(r'^search/', include('haystack.urls')),
 ]

@@ -30,4 +30,6 @@ urlpatterns = [
     url(r'addresses/(?P<address_id>\d+)/title/$', views.UpdateTitleAddressView.as_view()),
     # update password
     url(r'^password/$', views.ChangePasswordView.as_view(), name='pass'),
+    # user history
+    url(r'^browse_histories/$', views.UserBrowseHistory.as_view()),
 ]

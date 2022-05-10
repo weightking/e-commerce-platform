@@ -26,7 +26,6 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="b0567eb2-0d76-447a-823e-6264df8dc991">
-        <schema name="information_schema" object-types="table, view, procedure, function" />
         <schema name="meiduo" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
       </connection>
     </loaded-nodes>
@@ -43,14 +42,14 @@
     <connection id="b0567eb2-0d76-447a-823e-6264df8dc991" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users_groups" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_goods_visit" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_spu" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_content_category" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.auth_group" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_content" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users_user_permissions" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.django_session" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku_image" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_brand" active-filter-id="be1bcd2b-e26a-4845-99e5-f61c30ab329f">
       <filter id="be1bcd2b-e26a-4845-99e5-f61c30ab329f" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
@@ -58,6 +57,8 @@
     </filter-actions>
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_spu_specification" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.django_admin_log" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users_groups" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku_image" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users" active-filter-id="6ebe1c0f-a7a0-4b2f-a366-207d476317de">
       <filter id="6ebe1c0f-a7a0-4b2f-a366-207d476317de" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
