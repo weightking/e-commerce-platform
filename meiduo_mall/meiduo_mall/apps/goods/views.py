@@ -4,13 +4,15 @@ from django import http
 from django.core.paginator import Paginator, EmptyPage
 from django.utils import timezone
 from datetime import datetime
+from django_redis import get_redis_connection
 
 from goods.models import GoodsCategory, GoodsVisitCount
 from contents.utils import get_categories
 from goods.utils import get_breadcrumb
-from goods.models import SKU, SKUImage
+from goods.models import SKU
 from goods import constants
 from meiduo_mall.utils.response_code import RETCODE
+
 
 class DetailVisitView(View):
     """详情页分类商品访问量"""

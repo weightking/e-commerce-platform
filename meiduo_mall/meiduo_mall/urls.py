@@ -32,4 +32,6 @@ urlpatterns = [
     url(r'^', include('goods.urls', namespace='goods')),
     # elasticsearch
     url(r'^search/', include('haystack.urls')),
+    # carts
+    url(r'^', include('carts.urls', namespace='carts')),
 ]

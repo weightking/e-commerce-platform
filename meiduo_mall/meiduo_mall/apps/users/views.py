@@ -15,6 +15,7 @@ from celery_tasks.email.tasks import send_verify_email
 from users.utils import generate_verify_email_url, check_verify_email_token
 from . import constants
 from goods.models import SKU
+from carts.utils import merge_cart_cookie_to_redis
 # Create your views here.
 
 # create logging output
@@ -469,6 +470,7 @@ class LoginView(View):
             response = redirect(reverse('contents:index'))
         # save the username in cookie to show the username on home page
         response.set_cookie('username', user.username, max_age=3600)
+        response = merge_cart_cookie_to_redis(request=request, user=user, response=response)
         return response
 
 class LogoutView(View):

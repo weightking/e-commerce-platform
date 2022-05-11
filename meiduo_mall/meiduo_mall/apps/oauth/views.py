@@ -13,6 +13,7 @@ from oauth.models import OAuthQQUser
 from oauth.utils import generate_eccess_token, check_access_token
 import re
 from users.models import User
+from carts.utils import merge_cart_cookie_to_redis
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 # Create your views here.
 
@@ -75,7 +76,6 @@ class QQAuthUserView(View):
 
             # 登录时用户名写入到cookie，有效期15天
             response.set_cookie('username', qq_user.username, max_age=3600 * 24 * 15)
-
             return response
 
     def post(self, request):
@@ -135,5 +135,5 @@ class QQAuthUserView(View):
 
         # 登录时用户名写入到cookie，有效期15天
         response.set_cookie('username', user.username, max_age=3600 * 24 * 15)
-
+        response = merge_cart_cookie_to_redis(request=request, user=user, response=response)
         return response
