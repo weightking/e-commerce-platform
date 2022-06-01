@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'goods', # goods module
     'haystack', # 全文检索
     'carts', # shopping trolley
+    'orders', # orders
 ]
 
 MIDDLEWARE = [
