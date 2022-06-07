@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'haystack', # 全文检索
     'carts', # shopping trolley
     'orders', # orders
+    'payment', # 支付
 ]
 
 MIDDLEWARE = [
@@ -269,3 +270,10 @@ HAYSTACK_CONNECTIONS = {
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 # search number per page
 HAYSTACK_SEARCH_RESULTS_PER_PAGE = 5
+
+# Alipay parameters
+
+ALIPAY_APPID = '2021000120610876'
+ALIPAY_DEBUG = True
+ALIPAY_URL = 'https://openapi.alipaydev.com/gateway.do'
+ALIPAY_RETURN_URL = 'http://127.0.0.1:8000/payment/status/'
