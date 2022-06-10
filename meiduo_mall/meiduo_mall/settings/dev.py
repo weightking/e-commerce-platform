@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'default': { # write
         'ENGINE': 'django.db.backends.mysql', # 数据库引擎
         'HOST': '127.0.0.1', # 数据库主机
         'PORT': 3306, # 数据库端口
@@ -111,6 +111,14 @@ DATABASES = {
         'PASSWORD': 'Dz198704', # 数据库用户密码
         'NAME': 'meiduo' # 数据库名字
     },
+    'slave': {  # read（slave）
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': '192.168.1.138',
+        'PORT': 8306,
+        'USER': 'root',
+        'PASSWORD': 'mysql',
+        'NAME': 'meiduo'
+    }
 }
 AUTH_USER_MODEL = "users.User"
 # config redis database
@@ -285,3 +293,6 @@ CRONJOBS = [
 ]
 
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+# MySQL read and write seperate router
+DATABASE_ROUTERS = ['meiduo_mall.utils.db_router.MasterSlaveDBRouter']
