@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'orders', # orders
     'payment', # 支付
     'django_crontab', # 定时任务
+    'meiduo_admin', #backend
 ]
 
 MIDDLEWARE = [

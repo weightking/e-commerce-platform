@@ -26,7 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="b0567eb2-0d76-447a-823e-6264df8dc991">
-        <schema name="meiduo" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
+        <schema name="meiduo" object-types="table, view" />
       </connection>
     </loaded-nodes>
   </component>
