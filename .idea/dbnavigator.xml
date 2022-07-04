@@ -26,7 +26,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="b0567eb2-0d76-447a-823e-6264df8dc991">
-        <schema name="meiduo" object-types="table, view" />
+        <schema name="meiduo" object-types="table, view, procedure, function, constraint, index, column, dataset trigger" />
       </connection>
     </loaded-nodes>
   </component>
@@ -61,8 +61,8 @@
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users_groups" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_order_goods" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku_image" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users" active-filter-id="6ebe1c0f-a7a0-4b2f-a366-207d476317de">
-      <filter id="6ebe1c0f-a7a0-4b2f-a366-207d476317de" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users" active-filter-id="EMPTY_FILTER">
+      <filter id="c8d30607-19c5-4cd7-863a-9dfe4259bb1a" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
