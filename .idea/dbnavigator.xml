@@ -59,6 +59,7 @@
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_spu_specification" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.django_admin_log" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users_groups" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku_specification" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_order_goods" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_sku_image" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="b0567eb2-0d76-447a-823e-6264df8dc991" dataset="meiduo.tb_users" active-filter-id="EMPTY_FILTER">
